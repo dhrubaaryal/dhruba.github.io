@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+.iconSize {
+    width: 50px;
+}
+
+.container {
+    display: flex;
+    margin-top: 150px;
+    align-items: center;
+}
+
+
+.container .socials {
+    float: left;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    /* margin-right: 0px; */
+    justify-content: center;
+}
+
+
+.container .socials .socialsContent {
+    flex-basis: 30%;
+    margin: 20px auto;
+}
+
+
+.container .query {
+    float: left;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0px;
+}
+
+.container .query .qContents {
+    width: 60%;
+}
+
+.queryContent {
+    width: 100%;
+    margin: 5px;
+}
+
+.container .query .qContents .sendMessage{
+margin-top: 0px;
+margin-bottom: 0px;
+} 
+
+/*@media only screen and (max-width:1000px) {
+
+    .container .socials{
+        flex: 1;
+    }
+
+    .container .query{
+        flex: 3;
+    }
+    .container .query .qContents{
+        width: 90%;
+    }
+
+}*/
+
+@media only screen and (max-width:1000px) {
+
+    .container {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .container .socials {
+        justify-content: center;
+    }
+
+    .container .query {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .queryHeader{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .querySend{
+        text-align: center;
+    }
+}

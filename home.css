@@ -1,0 +1,113 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.homeContainer{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    flex: 1;
+    justify-content: center;
+    
+}
+
+
+.homeImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vh;
+    border-radius: 10%;
+    margin-top:auto;
+}
+
+.homeBio{
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 125%;
+
+}
+
+
+.textBox{
+    /* padding-left: 10em; */
+    /* padding-right: 10em; */
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.mainColumn{
+    box-sizing: border-box;
+    width: 80%;
+    display: flex;
+    padding-top: 10px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.columnLeft, .columnRight{
+    flex: 1;
+    float: left;
+    box-sizing: border-box;
+    width: fit-content;
+    justify-content: center;
+}
+
+
+.button {
+    display: block;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    margin: auto;
+
+    /* border-radius: 100%; */
+    /* max-width: 200px; */
+    cursor: pointer;
+    background-color:#faebd7;
+    width: fit-content;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: #4c9e9e;
+    border-radius: 0%;
+    transition: 0.8s ease;
+    width: fit-content;
+    scale: 1.2;
+}
+
+.buttonImage{
+    visibility: hidden;
+    width: 0;
+}
+
+figcaption{
+    visibility: hidden;
+    height: 0;
+}
+
+
+.button:hover > .buttonImage{
+    display: block;
+    visibility: visible;
+    width: 100px;
+    margin: auto;
+    
+}
+
+.button:hover > figcaption{
+    visibility: visible;
+    height: fit-content;
+}
